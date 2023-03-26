@@ -7,7 +7,7 @@ echo "........................."
 if [ "$1" == "" ]
 	then
 	echo "You forgot an IP address!"
-	echo "Syntax: ./ipsweep.sh 192.168.1"
+	echo "Syntax: ./ipSweep.sh 192.168.1"
 else
 	echo "$(date)" >> iplist.txt &
 	for ip in `seq 1 254`; do
@@ -17,3 +17,4 @@ done
 fi
 echo "........................."
 echo " "
+
